@@ -1,4 +1,4 @@
-def custom_filter(criteria, data):
+def ft_filter(criteria, data):
     """Custom filter implementation\n
     Returns a generator yielding items from data based on\n
     the given criteria."""
