@@ -27,21 +27,19 @@ def main():
     try:
         # Check the number of command-line arguments
         if len(sys.argv) != 3:
-            raise AssertionError("Exactly two arguments (string and integer) are required.")
-
+            raise AssertionError("Exactly two arguments\
+                                  (string and integer) are required.")
         text = sys.argv[1]
         length_threshold = int(sys.argv[2])
-
         # Validate argument types
         if not (isinstance(text, str) and isinstance(length_threshold, int)):
             raise AssertionError("Invalid argument types.")
-
         # Split the input string into words and filter based on length
         words = text.split()
+        # print("DEBUG")
+        # print(f"Words before filtering: {words}")
         filtered_words = filter_words_by_length(words, length_threshold)
-
         print(filtered_words)
-
     except ValueError as error:
         print("ValueError:", error)
     except AssertionError as error:
