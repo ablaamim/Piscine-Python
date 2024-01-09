@@ -6,7 +6,7 @@ setup(
     description='my package',
     author='ablaammim',
     author_email='ablaamim@student.1337.ma',
-    url='https://github.com/eagle/ft_package',
+    url='https://github.com/ablaamim/ft_package',
     packages=find_packages(),
     install_requires=[],
 )

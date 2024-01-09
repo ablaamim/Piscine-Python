@@ -1,5 +1,6 @@
 from sos import encode_to_morse
 
+
 def run_simple_tests():
     # Test Case 1
     input_text_1 = "Hello World"
@@ -30,7 +31,7 @@ def run_simple_tests():
     expected_result_5 = "--- -. . / - .-- --- / - .... .-. . ."
     result_5 = encode_to_morse(input_text_5)
 
-    #print(result_5)
+    # print(result_5)
     print(f"Test Case 5: {result_5 == expected_result_5}")
 
     # Test Case 6
@@ -39,6 +40,7 @@ def run_simple_tests():
     result_6 = encode_to_morse(input_text_6)
     # print(result_6)
     print(f"Test Case 6: {result_6 == expected_result_6}")
+
 
 if __name__ == "__main__":
     run_simple_tests()
